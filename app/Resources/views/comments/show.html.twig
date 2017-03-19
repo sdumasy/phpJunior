@@ -1,0 +1,7 @@
+<a href="{{ path('comment_create', {'articleId': articleId}) }}">Maak nieuwe comment!</a><br><br>
+
+{% for comment in comments %}
+    Username: {{ comment.username }} --
+    Bericht: {{ comment.message}}<br>
+
+{% endfor %}
